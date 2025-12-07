@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Password Strength Analyzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header with logo -->
+  <header class="site-header">
+    <img src="/static/logo.png" alt="CUSTECH Logo" class="logo">
+    <h1>Password Strength Analyzer</h1>
+    <p class="subtitle">Confluence University of Science and Technology, Osara</p>
+  </header>
+
+  <!-- Main content -->
+  <main class="container">
+    <label for="pw">Enter a password</label>
+    <input id="pw" type="password" autocomplete="new-password" placeholder="Type here..." />
+
+    <div class="meter"><div id="bar" class="bar"></div></div>
+    <div id="category" class="category">Waiting...</div>
+
+    <section>
+      <h2>Tips</h2>
+      <ul id="tips"></ul>
+    </section>
+
+    <section>
+      <h2>Breach check</h2>
+      <div id="breach">Not checked</div>
+    </section>
+  </main>
+
+  <!-- Footer with supervisor and group info -->
+  <footer class="site-footer">
+    <p>© 2025 Group IV CSC237 Mini-Project</p>
+    <p>Supervisor: Mr. E. Ekundayo</p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
